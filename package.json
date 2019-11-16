@@ -1,0 +1,32 @@
+{
+  "name": "star_wars_stenographer",
+  "version": "1.0.1",
+  "description": "Google Cloud Speech driven transcription service",
+  "main": "app.jsx",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
+  },
+  "author": "icenine",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "2.1.1",
+    "babel-eslint": "^10.0.3",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^2.2.0"
+  }
+}
